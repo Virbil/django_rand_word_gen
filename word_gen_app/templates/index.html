@@ -24,16 +24,16 @@
         </div>
     </div>
     <div class="container">
-        <h3 class="mb-5">Random Word Count #</h3>
-        <div class="form-group row">
+        <h3 class="mb-5">Random Word Count #{{ request.session.counter }}</h3>
+        <div class="form-group row word">
             <div class="col-sm-12">
-                <h1 class="border border-info border-3 rounded-top p-5">Click button to generate</h1>
+                <h1 class="border border-info border-3 rounded-top p-5">Click button to generate a random word</h1>
             </div>
-            <form action="/rand-word" method="POST">
-                {% csrf_token %}
-                <button class="btn btn-info btn-lrg mt-3 float-right">Generate</button>
-            </form>
         </div>
+        <form action="/rand-word" method="POST" class="float-right">
+            {% csrf_token %}
+            <button class="btn btn-info btn-lrg mt-3 float-right">Generate</button>
+        </form>
     </div>
 </body>
 </html>

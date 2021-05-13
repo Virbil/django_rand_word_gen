@@ -8,3 +8,8 @@ h1, h3, .rand-word, button{
     height: 100px;
     vertical-align: auto;
 }
+
+.word {
+    background-color: #D3D3D3;
+    /* #E9ECEF */
+}
