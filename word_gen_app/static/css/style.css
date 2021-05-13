@@ -1,0 +1,10 @@
+h1, h3, .rand-word, button{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.rand-word {
+    height: 100px;
+    vertical-align: auto;
+}
